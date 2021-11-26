@@ -4,7 +4,7 @@ const url = 'mongodb://localhost/personxy';
 const placeRoutes = require('./routes/person');
 const app = express();
 
-mongoose.connect('mongodb+srv://rupak-person:rupakperson@cluster0.9nbtc.mongodb.net/myFirstDatabase?retryWrites=true&w=majority')
+mongoose.connect('mongodb+srv://username:password@cluster0.9nbtc.mongodb.net/myFirstDatabase?retryWrites=true&w=majority')
 .then(()=>{
     app.listen(8000, ()=>{
         console.log("server connected");
